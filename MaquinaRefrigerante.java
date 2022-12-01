@@ -13,9 +13,9 @@ public class MaquinaRefrigerante {
 		System.out.printf("-------  1  - Coca-cola - R$ %.2f -------\n", coca);
 		System.out.printf("-------  2  - Pepsi     - R$ %.2f -------\n", pepsi);
 		System.out.printf("-------  3  - Sprite    - R$ %.2f -------\n", sprite);
-		System.out.printf("-------  4  - Guaraná   - R$ %.2f -------\n", guara);
+		System.out.printf("-------  4  - Guarana   - R$ %.2f -------\n", guara);
 		
-		System.out.println("\nDigite a opção escolhida: ");
+		System.out.println("\nDigite a opcao escolhida: ");
 		opc = teclado.nextInt();
 
 		
@@ -37,7 +37,7 @@ public class MaquinaRefrigerante {
 		                    vlr += dinheiro;
 		                    System.out.printf("\nMaquina: %.2f\n", vlr);
 		                } else{
-		                    System.out.println("\nValor inválido!");
+		                    System.out.println("\nValor invalido!");
 		                }		             		                
 		        }
 	    System.out.println("\nPegue sua(s) coca-cola(s)!");
@@ -65,7 +65,7 @@ public class MaquinaRefrigerante {
 		                    vlr += dinheiro;
 		                    System.out.printf("\nMaquina: %.2f\n", vlr);
 		                } else{
-		                    System.out.println("\nValor inválido!");
+		                    System.out.println("\nValor invalido!");
 		                }		             		                
 		        }
 	    System.out.println("\nPegue sua(s) Pepsi(s)!");
@@ -93,7 +93,7 @@ public class MaquinaRefrigerante {
 		                    vlr += dinheiro;
 		                    System.out.printf("\nMaquina: %.2f\n", vlr);
 		                } else{
-		                    System.out.println("\nValor inválido!");
+		                    System.out.println("\nValor invalido!");
 		                }     
 		        }
 	    System.out.println("\nPegue sua(s) Sprite(s)!");
@@ -106,7 +106,7 @@ public class MaquinaRefrigerante {
         if(opc == 4){
         	System.out.println("\nDigite a quantidade: ");
 			qtd = teclado.nextInt();
-        	System.out.println("\n" + qtd + " Guaraná(s)");
+        	System.out.println("\n" + qtd + " Guaranï¿½(s)");
 		    guara *= qtd;
 		    System.out.printf("Valor: R$ %.2f Reais\n", guara);
 		    vlr *= guara;
@@ -120,15 +120,15 @@ public class MaquinaRefrigerante {
 		                    vlr += dinheiro;
 		                    System.out.printf("\nMaquina: %.2f\n", vlr);
 		                } else{
-		                    System.out.println("\nValor inválido!");
+		                    System.out.println("\nValor invalido!");
 		                }		             		                
 		        }
-	    System.out.println("\nPegue seu(s) Guaraná(s)!");
+	    System.out.println("\nPegue seu(s) Guarana(s)!");
 	    maq = vlr - guara;
 		if(vlr > guara)
 		System.out.printf("Retire seu troco: %.2f", maq);
         } else if (opc < 1 || opc > 4)
-        System.out.println("Opção inválida!");     
+        System.out.println("Opcao invï¿½lida!");     
 
 	}
 

@@ -1,10 +1,8 @@
-package main;
+package servidor;
 
 import java.util.Scanner;
 
-import caixa.Caixa;
 import cliente.Compra;
-import manutencao.Maquina;
 
 public class Soda {
 	static Caixa cashdesk = new Caixa();

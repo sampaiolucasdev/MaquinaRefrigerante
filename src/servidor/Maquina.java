@@ -1,8 +1,6 @@
-package manutencao;
+package servidor;
 
 import java.util.ArrayList;
-
-import produtos.Produtos;
 
 public class Maquina {
 	private int contagem_produtos = 0;

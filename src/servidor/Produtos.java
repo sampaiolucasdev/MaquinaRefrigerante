@@ -1,4 +1,4 @@
-package produtos;
+package servidor;
 
 public class Produtos {
 	private int id;

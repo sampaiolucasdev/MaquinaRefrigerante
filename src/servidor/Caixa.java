@@ -1,11 +1,11 @@
-package caixa;
+package servidor;
 
 public class Caixa {
 	private double dinheiro_caixa = 0, dinheiro_vendas = 0;
 	
 	
 	//metodo para realizar a valida��o do dinheiro inserido na maquina
-	public boolean validar_dinheiro_inserido(String cash) throws Exception {
+	public boolean validar_insercao(String cash) throws Exception {
 		try {
 			double dinheiro_convertido = Double.parseDouble(cash);
 			double[] dinheiro_aceito = { 0.5, 1.0, 2.0, 5.0, 10.0 };
@@ -24,7 +24,7 @@ public class Caixa {
 	}
 	//metodo para adicionar o dinheiro no caixa
 	public void add_dinheiro_no_caixa(String cash) throws Exception {
-		if (this.validar_dinheiro_inserido(cash)) {
+		if (this.validar_insercao(cash)) {
 			this.dinheiro_caixa = this.dinheiro_caixa + Double.parseDouble(cash);
 			this.relatorio_de_caixa();
 		} else {

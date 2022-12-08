@@ -1,13 +1,14 @@
-package manutencao;
+package Testes;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import produtos.Produtos;
+import servidor.Maquina;
+import servidor.Produtos;
 
 class get_product_from_catalog {
 	@Test
-	@DisplayName("check_is_product_available")
-	void verifique_produto_disponivel() {
+	@DisplayName("Checar Produto")
+	void checar_produto() {
 		Maquina mchine = new Maquina();
 		assertNotNull(mchine.obter_produto_do_catalogo(0));
 	}

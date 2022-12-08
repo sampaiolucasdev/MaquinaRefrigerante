@@ -1,4 +1,4 @@
-package caixa;
+package Testes;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,11 +7,13 @@ import java.lang.Exception;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import servidor.Caixa;
+
 
 class get_sale_paybackTest {
 	@Test
-	@DisplayName("check_payback_amount")
-	void verificar_valor_reembolso() throws Exception {
+	@DisplayName("Receber Troco")
+	void verificar_troco() throws Exception {
 		
 		Caixa cashdesk = new Caixa();
 		cashdesk.add_dinheiro_no_caixa("10");

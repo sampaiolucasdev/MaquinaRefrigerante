@@ -1,8 +1,8 @@
 package cliente;
 
-import produtos.Produtos;
-import caixa.Caixa;
-import manutencao.Maquina;
+import servidor.Caixa;
+import servidor.Maquina;
+import servidor.Produtos;
 
 public class Compra {
 	private double valor_pagamento;
@@ -31,7 +31,7 @@ public class Compra {
 	}
 	//metodo para adicionar o dinheiro para compra
 	public void adicionar_dinheiro_de_compra(Caixa cashdesk, String cash) throws Exception {
-		if (cashdesk.validar_dinheiro_inserido(cash)) {
+		if (cashdesk.validar_insercao(cash)) {
 			this.valor_pagamento = this.valor_pagamento + Double.parseDouble(cash);
 		} else {
 			throw new Exception("Insira um valor válido!");
